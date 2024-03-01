@@ -1,0 +1,13 @@
+.colum{
+    height:80vh;
+    background-color: black;
+    flex-direction: column;
+
+
+}
+#button{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+}

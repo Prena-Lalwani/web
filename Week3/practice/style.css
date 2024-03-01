@@ -1,0 +1,66 @@
+.mybutton{
+    align-items: center;
+    color: aliceblue;
+    width: 90px;
+    height: 40px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.mybutton:active{
+    background-color: aqua;
+    color: aqua;
+    margin: 50px;
+}
+.format:hover{
+    text-transform:uppercase;
+}
+.CustomName > span:first-child{
+    background-color: aqua;
+    color: teal;
+    margin: 50px;
+    text-transform:uppercase;
+}
+.parent{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: blueviolet;
+}
+.child{
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    background-color: aquamarine;
+    top: 100px;
+    left: 100px;
+    font-family: "Workbench", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0;
+      visibility: none;
+}
+div span{
+    background-color: aliceblue;
+    width: 50px;
+    height: 50px;
+   display: block;
+}
+.container{
+    margin: 20px;
+}
+.inner{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    display: inline;
+    margin: 10px;
+    border-radius: 100px;
+}
+.flexcontainer{
+    margin: 20px;
+    display
+}
