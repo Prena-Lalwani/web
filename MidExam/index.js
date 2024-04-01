@@ -108,10 +108,11 @@ function updateCart() {
 cartContainer.innerHTML = ""; 
 let totalPrice = 0;
 cart.forEach((item, index) => {
-  const cartItemDiv = document.createElement("div"); // created Div cart
+  // cart
+  const cartItemDiv = document.createElement("div"); 
   cartItemDiv.classList.add("cart-item");
-
-  const itemName = document.createElement("p"); // paragraph for showing price
+// showing price
+  const itemName = document.createElement("p"); 
     itemName.textContent = item.name;
 
     const itemPrice = document.createElement("p");
