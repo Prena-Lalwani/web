@@ -73,6 +73,7 @@ const button = document.createElement("button");
 button.textContent = "Add to Cart";
 button.classList.add("add-to-cart-btn");
 
+// adding event listiner
 button.addEventListener("click", () => {
   addToCart(product);
   updateCart();
@@ -87,7 +88,7 @@ productDiv.appendChild(infoDiv);
 
 container.appendChild(productDiv);
 });
-
+// impimenting + functionality Here
 function addToCart(product) {
 const existingItem = cart.find(item => item.name === product.name);
 if (existingItem) {
@@ -97,6 +98,7 @@ if (existingItem) {
 }
 }
 
+// removing item from here
 function removeFromCart(index) {
 cart.splice(index, 1);
 updateCart();
@@ -128,9 +130,10 @@ cart.forEach((item, index) => {
         updateCart();
       }
     });
+    // functionlaity of removing
 
     const removeButton = document.createElement("button");
-    removeButton.textContent = "Remove";
+    removeButton.textContent = "Delete";
     removeButton.addEventListener("click", () => {
       removeFromCart(index);
     });
@@ -141,7 +144,7 @@ cart.forEach((item, index) => {
     cartItemDiv.appendChild(removeButton);
 
     cartContainer.appendChild(cartItemDiv);
-
+    // updating total price here
     totalPrice += item.price * item.quantity;
   });
 
