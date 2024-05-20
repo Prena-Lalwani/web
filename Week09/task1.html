@@ -96,7 +96,7 @@ text-align: center;
             localStorage.setItem('isLoggedIn', true);
             localStorage.setItem('username', username);
             // Redirect to another page
-            window.location.href = 'welcome.html'; // Replace 'welcome.html' with your desired page
+            window.location.href = 'task.html'; // Replace 'welcome.html' with your desired page
         } else {
             document.getElementById('errorMessage').style.display = 'block';
             document.getElementById('errorMessage').textContent = 'Invalid username or password!';
@@ -111,7 +111,7 @@ text-align: center;
     window.onload = function() {
         var isLoggedIn = localStorage.getItem('isLoggedIn');
         if (isLoggedIn) {
-            window.location.href = 'welcome.html';
+            window.location.href = 'task.html';
         }
     };
 </script>
